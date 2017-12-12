@@ -1,0 +1,389 @@
+name: obidam
+channels:
+- anaconda
+- ioam
+- menpo
+- fbriol
+- conda-forge
+- anaconda-fusion
+- defaults
+dependencies:
+- cython=0.27.3=py27h6429b90_0
+- icu=58.2=h4b95b61_1
+- libboost=1.65.1=h8182a68_3
+- libcxx=4.0.1=h579ed51_0
+- libcxxabi=4.0.1=hebd6815_0
+- alabaster=0.7.9=py27_0
+- appnope=0.1.0=py27_0
+- astroid=1.4.8=py27_0
+- babel=2.3.4=py27_0
+- backports=1.0=py27_1
+- backports.functools_lru_cache=1.2.1=py27_0
+- backports.shutil_get_terminal_size=1.0.0=py27_1
+- backports.weakref=1.0rc1=py27_1
+- backports_abc=0.5=py27_0
+- basemap=1.0.8.dev0=np111py27_3
+- basemap-data-hires=1.1.0=0
+- beautifulsoup4=4.5.3=py27_0
+- biggus=0.15.0=py27_0
+- blas=1.1=openblas
+- bleach=1.5.0=py27_0
+- boto3=1.4.2=py27_0
+- botocore=1.4.81=py27_0
+- bottleneck=1.2.0=np111py27_0
+- branca=0.2.0=py27_0
+- bzip2=1.0.6=1
+- ca-certificates=2016.9.26=0
+- cairo=1.14.6=4
+- cartopy=0.15.1=np111py27_1
+- certifi=2017.1.23=py27_0
+- cf_units=1.1.3=py27_1
+- cffi=1.7.0=py27_0
+- chardet=2.3.0=py27_0
+- cis=1.5.4=py27_0
+- click=6.7=py27_0
+- cloudpickle=0.2.2=py27_2
+- clyent=1.2.1=py27_0
+- configparser=3.5.0=py27_0
+- curl=7.55.1=0
+- cycler=0.10.0=py27_0
+- cyordereddict=1.0.0=py27_1
+- dask=0.16.0=py_0
+- dask-core=0.16.0=py_0
+- dask-glm=0.1.0=0
+- dask-ml=0.3.2=py27_0
+- dask-searchcv=0.2.0=py_0
+- dbus=1.10.10=3
+- decorator=4.0.11=py27_0
+- distributed=1.20.0=py27_0
+- docopt=0.6.2=py27_0
+- docutils=0.12=py27_0
+- ecmwf_grib=1.19.0=0
+- entrypoints=0.2.2=py27_1
+- enum34=1.1.6=py27_1
+- eofs=1.2.0=py27_0
+- et_xmlfile=1.0.1=py27_0
+- expat=2.1.0=2
+- ffmpeg=3.2.4=1
+- folium=0.3.0=py27_0
+- fontconfig=2.12.1=4
+- fortran-magic=0.7=py27_1
+- freetype=2.7=1
+- funcsigs=1.0.2=py27_0
+- functools32=3.2.3.2=py27_1
+- future=0.16.0=py27_0
+- futures=3.0.5=py27_0
+- geojson=1.3.5=py27_0
+- geos=3.5.1=1
+- glib=2.51.4=0
+- graphite2=1.3.9=0
+- graphviz=2.38.0=4
+- gsl=2.2.1=blas_openblas_4
+- gsw=3.0.3=py27_0
+- gunicorn=19.6.0=py27_0
+- h5netcdf=0.3.1=py27_0
+- h5py=2.7.1=py27_2
+- harfbuzz=1.4.3=0
+- hdf4=4.2.12=0
+- hdf5=1.10.1=1
+- heapdict=1.0.0=py27_0
+- holoviews=1.8.4=py27_0
+- html5lib=0.9999999=py27_0
+- imagesize=0.7.1=py27_0
+- ipykernel=4.5.2=py27_0
+- ipyleaflet=0.3.0=py27_0
+- ipyparallel=6.0.2=py27_0
+- ipython=5.2.2=py27_0
+- ipython_genutils=0.1.0=py27_0
+- ipywidgets=6.0.0=py27_0
+- iris=1.13.0=py27_1
+- iris-grib=0.9.1=py27_1
+- isort=4.2.5=py27_0
+- jasper=1.900.1=4
+- jdcal=1.3=py27_0
+- jedi=0.9.0=py27_0
+- jinja2=2.9.5=py27_0
+- jmespath=0.9.0=py27_0
+- jpeg=9b=0
+- jsonschema=2.5.1=py27_0
+- jupyter=1.0.0=py27_0
+- jupyter_client=4.4.0=py27_0
+- jupyter_console=5.1.0=py27_0
+- jupyter_core=4.2.1=py27_0
+- krb5=1.14.2=0
+- lancet=0.9.0=py27_0
+- lazy-object-proxy=1.2.2=py27_0
+- libffi=3.2.1=3
+- libgfortran=3.0.0=0
+- libiconv=1.14=4
+- libmo_unpack=3.0=1
+- libnetcdf=4.4.1.1=10
+- libpng=1.6.28=0
+- libsodium=1.0.10=0
+- libssh2=1.8.0=2
+- libtiff=4.0.6=7
+- libuuid=1.0.3=1
+- libxcb=1.12=1
+- libxml2=2.9.4=4
+- libxslt=1.1.29=3
+- locket=0.2.0=py27_1
+- lxml=3.7.3=py27_0
+- markdown2=2.3.1=py27_0
+- markupsafe=0.23=py27_1
+- matplotlib=1.5.3=np111py27_8
+- mccabe=0.5.3=py27_0
+- mechanicalsoup=0.6.0=py27_0
+- mistune=0.7.3=py27_0
+- mo_pack=0.2.0=np111py27_0
+- mock=2.0.0=py27_0
+- mplleaflet=0.0.5=py27_1
+- msgpack-python=0.4.8=py27_0
+- multipledispatch=0.4.9=py27_0
+- nb_conda=2.2.0=py27_0
+- nb_conda_kernels=2.1.0=py27_0
+- nbconvert=5.1.1=py27_0
+- nbformat=4.2.0=py27_0
+- nc_time_axis=1.0.2=py27_0
+- ncurses=5.9=10
+- netcdf-cxx4=4.3.0=6
+- netcdf-fortran=4.4.4=2
+- netcdf4=1.3.1=py27_1
+- nose=1.3.7=py27_2
+- numexpr=2.6.2=np111py27_0
+- numpy=1.11.3=py27_blas_openblas_203
+- numpydoc=0.6.0=py27_0
+- olefile=0.44=py27_0
+- openblas=0.2.20=4
+- openpyxl=2.5.0a1=py27_0
+- openssl=1.0.2h=3
+- owslib=0.14.0=py27_0
+- pandas=0.21.0=py27_0
+- pandas-highcharts=0.5.2=py27_0
+- pandas-profiling=1.3.0=py27_0
+- pandoc=1.19.2=0
+- pandocfilters=1.4.1=py27_0
+- pango=1.40.4=0
+- param=1.5.1=py27_0
+- partd=0.3.8=py27_0
+- pathlib2=2.2.1=py27_0
+- patsy=0.4.1=py27_0
+- pbr=1.10.0=py27_0
+- pcre=8.39=0
+- pep8=1.7.0=py27_0
+- pexpect=4.2.1=py27_0
+- pickleshare=0.7.3=py27_0
+- pillow=4.2.0=py27_0
+- pip=9.0.1=py27_0
+- pixman=0.34.0=0
+- plotly=2.0.7=py27_0
+- proj4=4.9.3=2
+- prompt_toolkit=1.0.10=py27_0
+- protobuf=3.5.0=py27_0
+- psutil=4.3.0=py27_0
+- ptyprocess=0.5.1=py27_0
+- py4j=0.10.6=py27_1
+- pycparser=2.17=py27_0
+- pydap=3.2.0=py27_2
+- pyepsg=0.3.1=py27_0
+- pyflakes=1.5.0=py27_0
+- pygments=2.2.0=py27_0
+- pyhdf=0.9.0=py27_2
+- pyke=1.1.1=py27_0
+- pylint=1.6.4=py27_0
+- pyproj=1.9.5.1=py27_0
+- pyqt=5.6.0=py27_4
+- pyshp=1.2.10=py27_0
+- pytables=3.4.2=py27_7
+- python=2.7.12=1
+- python-dateutil=2.6.0=py27_0
+- python-ecmwf_grib=1.19.0=np111py27_1
+- python-graphviz=0.5.1=py27_0
+- python-highcharts=0.3.1=py27_0
+- pytz=2016.10=py27_0
+- pyyaml=3.11=py27_0
+- pyzmq=16.0.2=py27_1
+- qt=5.6.2=1
+- qtawesome=0.4.4=py27_0
+- qtconsole=4.3.0=py27_0
+- qtpy=1.2.1=py27_0
+- r-base=3.4.1=2
+- readline=6.2=0
+- requests=2.13.0=py27_0
+- rpy2=2.8.5=py27r3.4.1_0
+- s3fs=0.0.8=py27_0
+- s3transfer=0.1.9=py27_0
+- scandir=1.3=py27_1
+- scikit-learn=0.19.1=py27_blas_openblas_201
+- scipy=1.0.0=py27_blas_openblas_201
+- seaborn=0.7.1=py27_0
+- setuptools=33.1.0=py27_0
+- shapely=1.5.17=np111py27_2
+- simplegeneric=0.8.1=py27_0
+- singledispatch=3.4.0.3=py27_0
+- sip=4.18=py27_1
+- six=1.10.0=py27_1
+- snowballstemmer=1.2.1=py27_0
+- sortedcontainers=1.5.3=py27_0
+- sphinx=1.5.2=py27_0
+- spyder=3.1.4=py27_0
+- sqlite=3.13.0=1
+- ssl_match_hostname=3.5.0.1=py27_0
+- statsmodels=0.8.0=np111py27_0
+- subprocess32=3.2.7=py27_0
+- tensorflow=1.3.0=py27_0
+- terminado=0.6=py27_0
+- testpath=0.3=py27_0
+- tk=8.5.19=1
+- toolz=0.8.2=py27_0
+- tornado=4.5.2=py27_0
+- traitlets=4.3.1=py27_0
+- udunits2=2.2.23=0
+- vincent=0.4.4=py27_0
+- wcwidth=0.1.7=py27_0
+- webencodings=0.5=py27_0
+- werkzeug=0.12.2=py_1
+- wheel=0.29.0=py27_0
+- widgetsnbextension=2.0.0=py27_0
+- wrapt=1.10.8=py27_0
+- x264=20131217=3
+- xarray=0.10.0=py27_0
+- xorg-kbproto=1.0.7=1
+- xorg-libice=1.0.9=2
+- xorg-libsm=1.2.2=2
+- xorg-libx11=1.6.4=6
+- xorg-libxau=1.0.8=3
+- xorg-libxaw=1.0.13=0
+- xorg-libxdmcp=1.1.2=3
+- xorg-libxext=1.3.3=2
+- xorg-libxmu=1.1.2=0
+- xorg-libxpm=3.5.12=0
+- xorg-libxt=1.1.5=0
+- xorg-xextproto=7.3.0=1
+- xorg-xproto=7.0.31=6
+- xz=5.2.2=0
+- yaml=0.1.6=0
+- zeromq=4.2.1=1
+- zict=0.1.3=py_0
+- zlib=1.2.11=0
+- accelerate=2.3.1=np111py27_0
+- accelerate_cudalib=2.0=0
+- anaconda-client=1.6.2=py27_0
+- bokeh=0.12.4=py27_0
+- chest=0.2.3=py27_0
+- cloog=0.18.0=0
+- cryptography=1.7.1=py27_0
+- cudatoolkit=7.0=1
+- gcc=4.8.5=8
+- gettext=0.19.8=1
+- gmp=6.1.0=0
+- idna=2.2=py27_0
+- ipaddress=1.0.18=py27_0
+- ipython-notebook=4.0.4=py27_0
+- isl=0.12.2=1
+- libgcc=4.8.5=1
+- llvmlite=0.15.0=py27_0
+- markdown=2.6.8=py27_0
+- mkl=11.3.3=0
+- mkl-service=1.1.2=py27_3
+- mpc=1.0.3=0
+- mpfr=3.1.5=0
+- mpi4py=2.0.0=py27_0
+- notebook=4.4.1=py27_0
+- numba=0.30.1=np111py27_0
+- openmpi=1.6.3=1
+- paramiko=2.1.2=py27_0
+- pyasn1=0.2.3=py27_0
+- pydot=1.0.28=py27_0
+- pydot-ng=1.0.0.15=py27_0
+- pyparsing=1.5.6=py27_0
+- python.app=1.2=py27_4
+- qgrid=0.3.2=py27_0
+- rope=0.9.4=py27_1
+- snakeviz=0.4.1=py27_0
+- sortedcollections=0.5.3=py27_0
+- tblib=1.3.0=py27_0
+- webob=1.6.1=py27_0
+- wget=2.2=py27_0
+- lagrangian=2.2.0=h8bb000a_0
+- geoviews=1.3.2=py27_0
+- boost-cpp=1.63.0=2
+- pip:
+  - backports-abc==0.5
+  - backports.functools-lru-cache==1.2.1
+  - backports.shutil-get-terminal-size==1.0.0
+  - backports.ssl-match-hostname==3.5.0.1
+  - bigml==4.9.2
+  - cachetools==2.0.1
+  - cf-units==1.1.3
+  - dill==0.2.7.1
+  - docrep==0.1.2
+  - emd-signal==0.1.12
+  - et-xmlfile==1.0.1
+  - gapic-google-cloud-datastore-v1==0.15.3
+  - gapic-google-cloud-error-reporting-v1beta1==0.15.3
+  - gapic-google-cloud-logging-v2==0.91.3
+  - gapic-google-cloud-pubsub-v1==0.15.4
+  - gapic-google-cloud-spanner-admin-database-v1==0.15.3
+  - gapic-google-cloud-spanner-admin-instance-v1==0.15.3
+  - gapic-google-cloud-spanner-v1==0.15.3
+  - google-auth==1.1.1
+  - google-cloud==0.27.0
+  - google-cloud-bigquery==0.26.0
+  - google-cloud-bigtable==0.26.0
+  - google-cloud-core==0.27.1
+  - google-cloud-datastore==1.2.0
+  - google-cloud-dns==0.26.0
+  - google-cloud-error-reporting==0.26.0
+  - google-cloud-language==0.27.0
+  - google-cloud-logging==1.2.0
+  - google-cloud-monitoring==0.26.0
+  - google-cloud-pubsub==0.27.0
+  - google-cloud-resource-manager==0.26.0
+  - google-cloud-runtimeconfig==0.26.0
+  - google-cloud-spanner==0.26.0
+  - google-cloud-speech==0.28.0
+  - google-cloud-storage==1.4.0
+  - google-cloud-translate==1.1.0
+  - google-cloud-videointelligence==0.25.0
+  - google-cloud-vision==0.26.0
+  - google-gax==0.15.15
+  - google-resumable-media==0.2.3
+  - googleapis-common-protos==1.5.3
+  - grpc-google-iam-v1==0.11.4
+  - grpcio==1.6.3
+  - httplib2==0.10.3
+  - ipython-genutils==0.1.0
+  - joblib==0.11
+  - jupyter-client==4.4.0
+  - jupyter-console==5.1.0
+  - jupyter-core==4.2.1
+  - keras==2.1.1
+  - lancet-ioam==0.9.0
+  - mo-pack==0.2.0
+  - monotonic==1.3
+  - nb-conda==2.2.0
+  - nb-conda-kernels==2.1.0
+  - nc-time-axis==1.0.2
+  - oauth2client==3.0.0
+  - ply==3.8
+  - poster==0.8.1
+  - prompt-toolkit==1.0.10
+  - proto-google-cloud-datastore-v1==0.90.4
+  - proto-google-cloud-error-reporting-v1beta1==0.15.3
+  - proto-google-cloud-logging-v2==0.91.3
+  - proto-google-cloud-pubsub-v1==0.15.4
+  - proto-google-cloud-spanner-admin-database-v1==0.15.3
+  - proto-google-cloud-spanner-admin-instance-v1==0.15.3
+  - proto-google-cloud-spanner-v1==0.15.3
+  - pyasn1-modules==0.1.4
+  - pystemmer==1.3.0
+  - rsa==3.4.2
+  - scikit-plot==0.3.3
+  - spark-xarray==0.1.dev0
+  - sphinx-rtd-theme==0.2.4
+  - tables==3.4.2
+  - tenacity==4.4.0
+  - unidecode==0.4.20
+  - urllib3==1.22
+  - xgcm==0.1.0
+

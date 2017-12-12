@@ -20,7 +20,7 @@ case "${unameOut}" in
 esac
 
 # Date of creation
-DATE=`date '+%Y%m%d%H%M%S'`
+DATE=`date '+%Y%m%d_%H%M%S'`
 
 # Compute export filename
 ymlfile="${envname}_${hard}_${machine}_${DATE}.yml"

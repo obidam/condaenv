@@ -11,14 +11,14 @@
 # 	@laptop:  /Users/gmaze/anaconda
 condasrc=`which conda`
 case "${condasrc}" in
-	"/home8/homedir3/perso/gmaze/miniconda2"*)	location=lops_ifremer;;
-	"/home/gmaze/miniconda2"*)	location=lops_iuem;;
-	"/Users/gmaze/anaconda"*)	location=laptop;;
+	"/home8/homedir3/perso/gmaze/miniconda2"*)	location="lops_ifremer";;
+	# "/home/gmaze/miniconda2"*)	location=lops_iuem;;
+	"/Users/gmaze/anaconda"*)	location="laptop";;
 	*)	location="UNSAFE"
 esac
 if [[ "$location" == "UNSAFE" ]]; then
 	echo $condasrc
-	echo "Untrusted location"
+	echo "Untrusted location, you should only pull, not push from here !"
 	exit 1
 else
 	echo "Working from: $location"
@@ -55,15 +55,23 @@ ymlfilelast="${envname}_${hard}_${machine}_last.yml"
 echo "Exporting conda environment $envname to: $ymldir/$ymlfile ..."
 conda env export -n $envname | grep -v "^prefix: " > ../$ymldir/$ymlfile
 
-# Update last version file
+# Check if the number of package is realistic:
+npack=$((`more ../$ymldir/$ymlfile | grep = | wc -l`))
+echo "Found $npack packages for this recipe"
+if [[ $npack<300 ]]; then
+	echo "Not enough packages ! Weird, abort"
+	exit 1
+fi
+
+# Update last version file in the root folder
 \cp ../$ymldir/$ymlfile ../$ymlfilelast
 
-# Update the git repo:
+# Update the git repo
 echo "Pushing last version to github ..."
 git pull --rebase origin master
 git add ../$ymldir/$ymlfile
 git add ../$ymlfilelast
-git commit -m "Automatic update to ${ymldir} environment"
+git commit -m "Automatic update to ${ymldir} environment from `whoami` (${location})"
 git push origin master
 
 # Exit gracefully
