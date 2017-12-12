@@ -1,0 +1,6 @@
+name: obidam
+channels:
+- anaconda-fusion
+- conda-forge
+- defaults
+
