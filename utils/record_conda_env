@@ -1,0 +1,33 @@
+#!/bin/bash
+#
+# This script export the conda environment in a yml file with data and platform
+#
+
+# Environement to export:
+envname="obidam"
+
+# Machine hardware name
+hard="$(uname -m)"
+
+# Machine type
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+
+# Date of creation
+DATE=`date '+%Y%m%d%H%M%S'`
+
+# Compute export filename
+ymlfile="${envname}_${hard}_${machine}_${DATE}.yml"
+
+# Export
+conda env export -n $envname | grep -v "^prefix: " > $ymlfile
+echo "Conda environment $envname exported to: $ymlfile"
+
+# Exit gracefully
+exit 0
