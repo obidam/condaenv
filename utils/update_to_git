@@ -11,8 +11,8 @@
 # 	@laptop:  /Users/gmaze/anaconda
 condasrc=`which conda`
 case "${condasrc}" in
-	"/home8/homedir3/perso/gmaze/miniconda2")	location=lops_ifremer;;
-	"/home/gmaze/miniconda2")	location=lops_iuem;;
+	"/home8/homedir3/perso/gmaze/miniconda2"*)	location=lops_ifremer;;
+	"/home/gmaze/miniconda2"*)	location=lops_iuem;;
 	"/Users/gmaze/anaconda"*)	location=laptop;;
 	*)	location="UNSAFE"
 esac
