@@ -3,7 +3,7 @@
 # This script export the conda environment in a yml file with data and platform
 #
 
-# Environement to export:
+# Environment to export:
 envname="obidam"
 
 # Machine hardware name
