@@ -1,0 +1,9 @@
+name: obidam
+channels: !!python/tuple
+- !!python/unicode
+  'anaconda-fusion'
+- !!python/unicode
+  'conda-forge'
+- !!python/unicode
+  'defaults'
+
