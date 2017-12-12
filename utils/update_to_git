@@ -38,9 +38,11 @@ echo "Conda environment $envname exported to: $ymldir/$ymlfile"
 \cp ../$ymldir/$ymlfile ../$ymlfilelast
 
 # Update the git repo:
+git pull --rebase origin master
 git add ../$ymldir/$ymlfile
 git add ../$ymlfilelast
 git commit -m "Automatic update to ${ymldir} environment"
+git push origin master
 
 # Exit gracefully
 exit 0

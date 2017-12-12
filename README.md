@@ -8,13 +8,13 @@ Clone the repo:
 	# or alternatively:
 	git clone git@github.com:obidam/condaenv.git
 
-Then create the conda environment:
+Then create the conda environment from the last yml recipe for your platform:
 
-	cd condaenv
-	conda env create -f obidam_x86_64_Linux_last.yml
+	conda env create -f condaenv/obidam_x86_64_Linux_last.yml
 
 ## Remove the environment
-conda remove --name obidam --all
+
+	conda remove --name obidam --all
 
 ## Updating the environment from dev server
 	cd utils
