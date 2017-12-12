@@ -8,6 +8,7 @@
 
 # Environement to export:
 envname="obidam"
+source activate $envname
 
 # Machine hardware name
 hard="$(uname -m)"
@@ -23,7 +24,7 @@ case "${unameOut}" in
 esac
 
 # Date of creation
-DATE=`date '+%Y%m%d%H%M%S'`
+DATE=`date '+%Y%m%d_%H%M%S'`
 
 # Compute export filename
 ymldir="${hard}_${machine}"
