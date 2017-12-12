@@ -4,7 +4,27 @@
 #
 # This script must be ran from the utils directory
 
-# Get last version of the environment for this platform
+# Ensure we're going to make the export from the appropriate source:
+# `which conda` must be located in:
+# 	@pacnet:  /home8/homedir3/perso/gmaze/miniconda2
+# 	@krypton: /home/gmaze/miniconda2
+# 	@laptop:  /Users/gmaze/anaconda
+condasrc=`which conda`
+case "${condasrc}" in
+	"/home8/homedir3/perso/gmaze/miniconda2")	location=lops_ifremer;;
+	"/home/gmaze/miniconda2")	location=lops_iuem;;
+	"/Users/gmaze/anaconda"*)	location=laptop;;
+	*)	location="UNSAFE"
+esac
+if [[ "$location" == "UNSAFE" ]]; then
+	echo $condasrc
+	echo "Untrusted location"
+	exit 1
+else
+	echo "Working from: $location"
+fi
+
+# Get the last version of the environment for this platform
 
 # Environement to export:
 envname="obidam"
@@ -32,13 +52,14 @@ ymlfile="${envname}_${hard}_${machine}_${DATE}.yml"
 ymlfilelast="${envname}_${hard}_${machine}_last.yml"
 
 # Export
+echo "Exporting conda environment $envname to: $ymldir/$ymlfile ..."
 conda env export -n $envname | grep -v "^prefix: " > ../$ymldir/$ymlfile
-echo "Conda environment $envname exported to: $ymldir/$ymlfile"
 
 # Update last version file
 \cp ../$ymldir/$ymlfile ../$ymlfilelast
 
 # Update the git repo:
+echo "Pushing last version to github ..."
 git pull --rebase origin master
 git add ../$ymldir/$ymlfile
 git add ../$ymlfilelast
@@ -46,6 +67,7 @@ git commit -m "Automatic update to ${ymldir} environment"
 git push origin master
 
 # Exit gracefully
+echo "Done"
 exit 0
 
 
