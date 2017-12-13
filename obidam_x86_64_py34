@@ -7,7 +7,7 @@
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 # Install and update conda with python 3.4:
-bash Miniconda2-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 conda update conda
 
 # Add more channels:
