@@ -4,10 +4,10 @@
 # 
 
 # Download the conda installer:
-wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
+#wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 
 # Install and update conda with python 2.7:
-bash Miniconda2-latest-Linux-x86_64.sh
+#bash Miniconda2-latest-Linux-x86_64.sh
 conda update conda
 
 # Add more channels:
