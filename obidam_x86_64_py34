@@ -2,21 +2,25 @@
 #
 # This script will build the Obidam environment from scratch
 # 
+# UnsatisfiableError: The following specifications were found to be in conflict:
+#   - dask-ml -> dask-searchcv -> python 3.5*
+#   - python 3.4*
+# Use "conda info <package>" to see the dependencies for each package.
 
 # Download the conda installer:
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+# wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 # Install and update conda with python 3.4:
-bash Miniconda3-latest-Linux-x86_64.sh
+# bash Miniconda3-latest-Linux-x86_64.sh
 conda update conda
 
 # Add more channels:
 conda config --add channels conda-forge
 conda config --add channels anaconda-fusion
+conda config --add channels defaults
 # conda config --add channels menpo
 # conda config --add channels ioam
 # conda config --add channels fbriol
-conda config --add channels defaults
 
 # Init the OBIDAM environment from anaconda:
 conda create -n obidam34 python=3.4 anaconda
