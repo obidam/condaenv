@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This script will build the Obidam environment from scratch
+# This script will build the Obidam environment from scratch for linux
 # 
 # UnsatisfiableError: The following specifications were found to be in conflict:
 #   - dask-ml -> dask-searchcv -> python 3.5*
@@ -53,6 +53,7 @@ conda install -n obidam34 folium # Python Data, Leaflet.js Maps
 conda install -n obidam34 cartopy # Make drawing maps for data analysis and visualisation as easy as possible
 conda install -n obidam34 python-highcharts # Layer between Python and Javascript for Highcharts projects (highcharts, highmaps, and highstocks).
 conda install -n obidam34 python-graphviz # Simple Python interface for Graphviz
+conda install -n obidam34 -c bokeh datashader # Datashader is a data rasterization pipeline for automating the process of creating meaningful representations of large amounts of data
 
 conda install -n obidam34 dask-ml # Distributed and parallel machine learning
 conda install -n obidam34 dask-searchcv # Tools for performing hyperparameter search with Scikit-Learn and Dask

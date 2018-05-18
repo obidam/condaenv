@@ -9,6 +9,7 @@
 # 	@pacnet:  /home8/homedir3/perso/gmaze/miniconda2
 # 	@krypton: /home/gmaze/miniconda2
 # 	@laptop:  /Users/gmaze/anaconda
+
 condasrc=`which conda`
 case "${condasrc}" in
 	"/home8/homedir3/perso/gmaze/miniconda2"*)	location="lops_ifremer";;

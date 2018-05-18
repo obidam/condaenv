@@ -1,24 +1,20 @@
 name: obidam
 channels:
-- bokeh
-- anaconda
-- defaults
-- anaconda-fusion
-- conda-forge
-- fbriol
 - ioam
 - menpo
+- anaconda
+- fbriol
+- conda-forge
+- anaconda-fusion
+- defaults
 dependencies:
 - cython=0.27.3=py27h6429b90_0
 - icu=58.2=h4b95b61_1
 - libboost=1.65.1=h8182a68_3
 - libcxx=4.0.1=h579ed51_0
 - libcxxabi=4.0.1=hebd6815_0
-- colorcet=1.0.0=py27h2c72f91_0
-- datashader=0.6.1=py27_0
 - alabaster=0.7.9=py27_0
 - appnope=0.1.0=py27_0
-- arrow-cpp=0.9.0=py27_7
 - astroid=1.4.8=py27_0
 - babel=2.3.4=py27_0
 - backports=1.0=py27_1
@@ -32,7 +28,6 @@ dependencies:
 - biggus=0.15.0=py27_0
 - blas=1.1=openblas
 - bleach=1.5.0=py27_0
-- boost-cpp=1.66.0=1
 - boto3=1.4.2=py27_0
 - botocore=1.4.81=py27_0
 - bottleneck=1.2.0=np111py27_0
@@ -56,9 +51,8 @@ dependencies:
 - dask=0.16.0=py_0
 - dask-core=0.16.0=py_0
 - dask-glm=0.1.0=0
-- dask-ml=0.4.0=py27_0
+- dask-ml=0.3.2=py27_0
 - dask-searchcv=0.2.0=py_0
-- datashape=0.5.4=py27_0
 - dbus=1.10.10=3
 - decorator=4.0.11=py27_0
 - distributed=1.20.0=py27_0
@@ -99,7 +93,7 @@ dependencies:
 - ipykernel=4.5.2=py27_0
 - ipyleaflet=0.3.0=py27_0
 - ipyparallel=6.0.2=py27_0
-- ipython=5.0.0=py27_1
+- ipython=5.2.2=py27_0
 - ipython_genutils=0.1.0=py27_0
 - ipywidgets=6.0.0=py27_0
 - iris=1.13.0=py27_1
@@ -170,7 +164,6 @@ dependencies:
 - pandocfilters=1.4.1=py27_0
 - pango=1.40.4=0
 - param=1.5.1=py27_0
-- parquet-cpp=1.4.0=0
 - partd=0.3.8=py27_0
 - pathlib2=2.2.1=py27_0
 - patsy=0.4.1=py27_0
@@ -189,7 +182,6 @@ dependencies:
 - psutil=4.3.0=py27_0
 - ptyprocess=0.5.1=py27_0
 - py4j=0.10.6=py27_1
-- pyarrow=0.9.0=py27_1
 - pycparser=2.17=py27_0
 - pydap=3.2.0=py27_2
 - pyepsg=0.3.1=py27_0
@@ -281,7 +273,6 @@ dependencies:
 - cloog=0.18.0=0
 - cryptography=1.7.1=py27_0
 - cudatoolkit=7.0=1
-- fastparquet=0.1.0=py27_2
 - gcc=4.8.5=8
 - gettext=0.19.8=1
 - gmp=6.1.0=0
@@ -301,24 +292,21 @@ dependencies:
 - numba=0.30.1=np111py27_0
 - openmpi=1.6.3=1
 - paramiko=2.1.2=py27_0
-- ply=3.10=py27_0
-- py=1.4.34=py27_0
 - pyasn1=0.2.3=py27_0
 - pydot=1.0.28=py27_0
 - pydot-ng=1.0.0.15=py27_0
 - pyparsing=1.5.6=py27_0
-- pytest=3.2.1=py27_0
 - python.app=1.2=py27_4
 - qgrid=0.3.2=py27_0
 - rope=0.9.4=py27_1
 - snakeviz=0.4.1=py27_0
 - sortedcollections=0.5.3=py27_0
 - tblib=1.3.0=py27_0
-- thriftpy=0.3.8=py27_0
 - webob=1.6.1=py27_0
 - wget=2.2=py27_0
 - lagrangian=2.2.0=h8bb000a_0
 - geoviews=1.3.2=py27_0
+- boost-cpp=1.63.0=2
 - pip:
   - backports-abc==0.5
   - backports.functools-lru-cache==1.2.1
@@ -377,6 +365,7 @@ dependencies:
   - nb-conda-kernels==2.1.0
   - nc-time-axis==1.0.2
   - oauth2client==3.0.0
+  - ply==3.8
   - poster==0.8.1
   - prompt-toolkit==1.0.10
   - proto-google-cloud-datastore-v1==0.90.4
@@ -390,7 +379,6 @@ dependencies:
   - pystemmer==1.3.0
   - rsa==3.4.2
   - scikit-plot==0.3.3
-  - seabird==0.10.4
   - spark-xarray==0.1.dev0
   - sphinx-rtd-theme==0.2.4
   - tables==3.4.2

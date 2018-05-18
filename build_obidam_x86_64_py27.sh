@@ -1,7 +1,8 @@
 #!/bin/bash
 #
-# This script will build the Obidam environment from scratch
+# This script will build the Obidam environment from scratch for linux
 # 
+source ~/.bash_profile
 
 # Download the conda installer:
 #wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
@@ -49,11 +50,15 @@ conda install -n obidam27 folium # Python Data, Leaflet.js Maps
 conda install -n obidam27 cartopy # Make drawing maps for data analysis and visualisation as easy as possible
 conda install -n obidam27 python-highcharts # Layer between Python and Javascript for Highcharts projects (highcharts, highmaps, and highstocks).
 conda install -n obidam27 python-graphviz # Simple Python interface for Graphviz
+conda install -n obidam27 -c bokeh datashader
 
 conda install -n obidam27 dask-ml # Distributed and parallel machine learning
 conda install -n obidam27 dask-searchcv # Tools for performing hyperparameter search with Scikit-Learn and Dask
 conda install -n obidam27 tensorflow # Library for numerical computation using data flow graphs
 conda install -n obidam27 keras # Deep Learning library for Python
+conda install -n obidam27 tensorflow # Library for numerical computation using data flow graphs
+conda install -n obidam27 pyarrow # Apache Arrow is a cross-language development platform for in-memory data
+conda install -n obidam27 fastparquet # Python implementation of the parquet format, aiming integrate into python-based big data work-flows
 
 conda install -n obidam27 cis # Easy collocation, visualization, analysis, and comparison of diverse gridded and ungridded datasets used in the atmospheric sciences
 conda install -n obidam27 google-cloud-storage # Python idiomatic client for Google Cloud Storage
