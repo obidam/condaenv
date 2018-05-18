@@ -1,9 +1,9 @@
 name: obidam
 channels:
 - ioam
+- defaults
 - anaconda-fusion
 - conda-forge
-- defaults
 dependencies:
 - alabaster=0.7.10=py27_0
 - anaconda-client=1.6.5=py_0
