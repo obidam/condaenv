@@ -27,6 +27,12 @@ conda install -n obidam36 dask-ml
 conda install -n obidam36 -c conda-forge intake intake-xarray rasterio intake-cmip intake-spark
 
 conda install -n obidam36 -c conda-forge seaborn hvplot
+conda install -n obidam36 google-cloud-storage gcsfs
+
+pip install dask_labextension
+conda install -n obidam36 nodejs
+jupyter labextension install dask-labextension
+
 
 # Add environment to Jupyter list of kernels:
 python -m ipykernel install --user --name obidam36 --display-name "obidam36"
