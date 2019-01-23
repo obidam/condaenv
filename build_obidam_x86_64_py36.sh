@@ -31,8 +31,9 @@ conda install -n obidam36 google-cloud-storage gcsfs
 
 pip install dask_labextension
 conda install -n obidam36 nodejs
+conda install -n obidam36 -c conda-forge ipywidgets
 jupyter labextension install dask-labextension
-
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 # Add environment to Jupyter list of kernels:
 python -m ipykernel install --user --name obidam36 --display-name "obidam36"
