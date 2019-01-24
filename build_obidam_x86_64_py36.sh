@@ -29,6 +29,8 @@ conda install -n obidam36 -c conda-forge intake intake-xarray rasterio intake-cm
 conda install -n obidam36 -c conda-forge seaborn hvplot
 conda install -n obidam36 google-cloud-storage gcsfs
 
+pip install sklearn-xarray
+
 pip install dask_labextension
 conda install -n obidam36 nodejs
 conda install -n obidam36 -c conda-forge ipywidgets
