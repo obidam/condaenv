@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This script will build the Obidam environment from scratch for linux
+# This script will build the OBIDAM environment from scratch for linux, based on python 3.6
 # 
 # Use "conda info <package>" to see the dependencies for each package.
 
