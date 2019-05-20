@@ -26,6 +26,7 @@ conda create -n obidam36 python=3.6 anaconda
 source activate obidam36
 
 # Install packages:
+
 conda install -n obidam36 xarray dask netCDF4 bottleneck gsw cartopy pynio pseudonetcdf intake intake-xarray rasterio intake-cmip intake-spark
 
 conda install -n obidam36 seaborn hvplot python-graphviz google-cloud-storage gcsfs parcels ffmpeg nodejs ipywidgets datashader pyviz hvplot geoviews
@@ -37,8 +38,11 @@ conda install -n obidam36 mpi mpich openmpi mpi4py
 conda install -c anaconda gfortran_osx-64
 
 conda install -n obidam36 tensorflow keras
+# Or onstall pre-compiled tensorflow for MacBookPro: instead
+# pip install --ignore-installed --upgrade "https://github.com/lakshayg/tensorflow-build/releases/download/v1.4.1-macosx_10_12-py27-py36-avx-sse41-sse42/tensorflow-1.4.1-cp36-cp36m-macosx_10_12_x86_64.whl"
+# pip install keras
+pip install tensorboard==1.13
 pip install jupyter-tensorboard
-
 
 pip install --upgrade google-cloud-bigquery
 pip install papermill

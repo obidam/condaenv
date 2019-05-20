@@ -4,7 +4,7 @@
 #
 
 # Environment to export:
-envname="obidam"
+envname="obidam36"
 
 # Machine hardware name
 hard="$(uname -m)"
