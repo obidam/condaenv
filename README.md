@@ -14,10 +14,9 @@ Then create the conda environment from the last yml recipe for your platform:
 
 ## Build the OBIDAM environment from the list of packages
 
-You can run one of the bash scripts:
-
-	build_obidam_x86_64_py27.sh
-	build_obidam_x86_64_py34.sh
+You can run one of the build scripts:
+		
+	build_obidam_x86_64_py36.sh
 
 ## Remove the environment
 
